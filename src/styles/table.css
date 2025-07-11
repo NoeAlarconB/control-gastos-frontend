@@ -1,0 +1,111 @@
+.page-card {
+    margin-top: 1.5rem;
+        padding: 1.5rem;
+        background: #ffffff;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.data-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+    font-size: 0.94rem;
+}
+
+.data-table thead {
+    background: #f3f4f6;
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.data-table th {
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.data-table tbody tr {
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.18s ease;
+}
+
+.data-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background: #fcfcfd;
+}
+td[data-col='monto'] {
+    font-weight: 600;
+}
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.55rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.badge.ingreso {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.badge.gasto {
+    background: #f70303;
+    color: #b91c1c;
+}
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    background: #f3f4f6;
+    color: #374151;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.icon-btn:hover {
+    background: #e5e7eb;
+}
+.icon-btn:active {
+    transform: scale(0.94);
+}
+.icon-btn.danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+.icon-btn.danger:hover {
+    background: #fecaca;
+}

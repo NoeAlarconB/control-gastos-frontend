@@ -1,0 +1,47 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.22s ease, transform 0.12s ease;
+}
+
+.btn:not(.outline) {
+    background: #7bff00;
+    color: #000000;
+}
+
+.btn:not(.outline):hover {
+    background: #6ce000;
+}
+
+.btn:not(.outline):active {
+    transform: scale(0.97);
+}
+
+.btn.outline {
+    background: transparent;
+    color: #0004ff;
+    border: 2px solid #0004ff;
+}
+
+.btn.outline:hover {
+    background: rgba(70, 72, 170, 0.1);
+}
+
+.btn.outline:active {
+    transform: scale(0.97);
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
